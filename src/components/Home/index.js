@@ -109,7 +109,7 @@ export default function Home() {
         <Button variant="outlined">See More</Button>
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center my-4">
         <p className="text-4xl font-bold my-4 text-center"> DIY Suggestions</p>
         <iframe
           className="w-full h-80 my-3"
