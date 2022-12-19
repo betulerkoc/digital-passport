@@ -2,6 +2,7 @@ import Cotton from "../../Cotton.png";
 import Cloth from "../../Cloth.png";
 import { Button } from "@material-tailwind/react";
 import { InstagramEmbed } from "react-social-media-embed";
+import Form from "../Form";
 
 export default function Home() {
   return (
@@ -121,7 +122,9 @@ export default function Home() {
         ></iframe>
         <Button variant="outlined">See More</Button>
       </div>
-
+      <div className="bg-blue-50 h-fit">
+        <Form />
+      </div>
     </>
   );
 }
