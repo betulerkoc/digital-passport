@@ -95,7 +95,7 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div className="flex flex-wrap justify-center py-10">
+      <div className="flex flex-wrap justify-around py-10">
         <p className="text-4xl font-bold my-3"> Combine Tips</p>
         <InstagramEmbed
           url="https://www.instagram.com/p/ClTtvTCKriQ/"
@@ -107,7 +107,7 @@ export default function Home() {
           captioned
           className="w-auto h-auto mr-10 mt-3"
         />
-        <Button variant="outlined">See More</Button>
+        <Button variant="outlined" className="text-black border-black">See More</Button>
       </div>
 
       <div className="flex flex-col items-center my-4">
@@ -120,7 +120,7 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <Button variant="outlined">See More</Button>
+        <Button variant="outlined" className="text-black border-black">See More</Button>
       </div>
       <div className="bg-blue-50 h-fit">
         <Form />
