@@ -10,11 +10,13 @@ export default function Home() {
       <div className="bg-black w-screen h-96 mt-10 flex flex-col items-center justify-evenly">
         <img className="w-20 h-20 xl:w-48 xl:h-48" src={Cotton} alt="cotton" />
         <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">
-          It takes 2,700 liters of water to make the average cotton t-shirt{" "}
+          - It takes 2,700 liters of water <span className="italic">That’s enough drinking water for one person for 900 days{" "}</span>
         </p>
         <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">
-          That’s enough drinking water for one person for 900 days{" "}
+          - The approximate carbon footprint for a T-shirt made of polyester is 35
+          kg-CO2e/kg
         </p>
+
       </div>
       <div className="w-screen h-fit my-5 flex flex-col lg:flex-row items-center justify-around">
         <img
@@ -95,8 +97,8 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div className="flex flex-wrap justify-around py-10">
-        <p className="text-4xl font-bold my-3"> Combine Tips</p>
+      <p className="text-4xl font-bold my-3"> Combine Tips</p>
+      <div className="flex flex-wrap  justify-around py-10">
         <InstagramEmbed
           url="https://www.instagram.com/p/ClTtvTCKriQ/"
           captioned
@@ -107,8 +109,10 @@ export default function Home() {
           captioned
           className="w-auto h-auto mr-10 mt-3"
         />
-        <Button variant="outlined" className="text-black border-black">See More</Button>
       </div>
+      <Button variant="outlined" className="text-black border-black">
+        See More
+      </Button>
 
       <div className="flex flex-col items-center my-4">
         <p className="text-4xl font-bold my-4 text-center"> DIY Suggestions</p>
@@ -120,7 +124,9 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-        <Button variant="outlined" className="text-black border-black">See More</Button>
+        <Button variant="outlined" className="text-black border-black">
+          See More
+        </Button>
       </div>
       <div className="bg-blue-50 h-fit">
         <Form />
