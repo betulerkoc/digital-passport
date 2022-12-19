@@ -1,15 +1,9 @@
 import Cotton from "../../Cotton.png";
 import Cloth from "../../Cloth.png";
 import { Button } from "@material-tailwind/react";
-import Form from "../Form"
+import { InstagramEmbed } from "react-social-media-embed";
 
 export default function Home() {
-
-  const redirectToForm = () => {
-    window.gtag('event','redirect_to_form')
-    window.location.href='#form';
-  }
-
   return (
     <>
       <div className="bg-black w-screen h-96 mt-10 flex flex-col items-center justify-evenly">
@@ -21,8 +15,15 @@ export default function Home() {
           That’s enough drinking water for one person for 900 days{" "}
         </p>
       </div>
-      <div className="w-screen h-96 mt-10 flex flex-col lg:flex-row items-center justify-around">
-        <img className="w-20 h-20 xl:w-36 xl:h-36 mt-10" src={Cloth} alt="cloth" />
+      <div className="w-screen h-fit my-5 flex flex-col lg:flex-row items-center justify-around">
+        <img
+          className="w-20 h-20 xl:w-36 xl:h-36 mt-10"
+          src={Cloth}
+          alt="cloth"
+        />
+        <p className="text-4xl my-2 font-bold text-center">
+          Fast Fashion is out of Fashion
+        </p>
         <div className="text-xl md:text-2xl xl:text-2xl text-center">
           <p className="p-2">
             Global textiles production almost doubled between 2000 and 2015
@@ -35,9 +36,9 @@ export default function Home() {
             Every second somewhere in the world a truckload of textiles is
             landfilled or incinerated
           </p>
-          <Button className="mb-3 bg-black text-base" onClick={() => redirectToForm()}>What do you think?</Button>
         </div>
       </div>
+      <p className="text-4xl font-bold mt-10 text-center"> Useful Videos</p>
       <div className="flex overflow-x-auto no-scrollbar py-10">
         <iframe
           className="w-full h-56 mr-5"
@@ -92,27 +93,35 @@ export default function Home() {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="bg-blue-50 h-fit">
-        <Form/>
+
+      <div className="flex flex-wrap justify-around py-10">
+        <p className="text-4xl font-bold my-3"> Combine Tips</p>
+        <InstagramEmbed
+          url="https://www.instagram.com/p/ClTtvTCKriQ/"
+          captioned
+          className="w-auto h-auto mr-10 mt-3"
+        />
+        <InstagramEmbed
+          url="https://www.instagram.com/p/Ce_XDysKo9C/"
+          captioned
+          className="w-auto h-auto mr-10 mt-3"
+        />
+        <Button variant="outlined">See More</Button>
       </div>
 
-      {/* <div className="flex flex-wrap justify-around py-10">
-        <InstagramEmbed
-          url="https://www.instagram.com/p/CRV7Awarg1M/"
-          captioned
-          className="w-auto h-auto mr-10 mt-3"
-        />
-        <InstagramEmbed
-          url="https://www.instagram.com/p/CMjUgx8raqC/"
-          captioned
-          className="w-auto h-auto mr-10 mt-3"
-        />
-        <InstagramEmbed
-          url="https://www.instagram.com/p/CMrXRMmL2Es/"
-          captioned
-          className="w-auto h-auto mr-10 mt-3"
-        />
-      </div> */}
+      <div className="flex flex-col items-center">
+        <p className="text-4xl font-bold my-4 text-center"> DIY Suggestions</p>
+        <iframe
+          className="w-full h-80 my-3"
+          src="https://www.youtube.com/embed/fj7vja5DxZ4"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <Button variant="outlined">See More</Button>
+      </div>
+
     </>
   );
 }
