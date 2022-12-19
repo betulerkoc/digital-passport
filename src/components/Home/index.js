@@ -8,14 +8,14 @@ export default function Home() {
     <>
       <div className="bg-green-200 py-5 w-screen h-fit mt-10 flex flex-col items-center justify-evenly lg:px-20">
       <img className="w-28 h-28" src="https://img.icons8.com/dotty/80/null/jacket.png" alt="jacket"/>
-        <div className="border w-40 h-64 bg-white flex flex-col">
+        <div className="border w-40 h-64 lg:w-60 lg:h-80 bg-white flex flex-col">
           <div className="border border-dashed py-4">
-            <p className="text-center font-bold">ENVIRONMENTAL SAVINGS</p>
-            <p className="text-center text-xs">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
+            <p className="text-center font-bold lg:text-lg">ENVIRONMENTAL SAVINGS</p>
+            <p className="text-center text-xs lg:text-sm">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
             <p className="text-center text-xs font-bold">Calculation per 1kg</p>
           </div>
 
-          <div className="flex flex-row py-2 justify-around items-center">
+          <div className="flex flex-row py-2 lg:py-4 justify-around items-center">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/ios/50/null/wet.png"
@@ -23,7 +23,7 @@ export default function Home() {
             />
             <p>396 LITERS</p>
           </div>
-          <div className="flex flex-row py-1 justify-around">
+          <div className="flex flex-row py-1 lg:py-4 justify-around">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/external-line-rakhmat-setiawan/64/null/external-carbondioxide-ecology-and-energy-line-line-rakhmat-setiawan.png"
@@ -31,7 +31,7 @@ export default function Home() {
             />
             <p>42 CO2</p>
           </div>
-          <div className="flex flex-row py-1 justify-around">
+          <div className="flex flex-row py-1 lg:py-4 justify-around">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/ios/50/null/electricity.png"
