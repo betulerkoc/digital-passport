@@ -95,7 +95,7 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div className="flex flex-wrap justify-center py-10 px-1">
+      <div className="flex flex-wrap justify-center py-10">
         <p className="text-4xl font-bold my-3"> Combine Tips</p>
         <InstagramEmbed
           url="https://www.instagram.com/p/ClTtvTCKriQ/"
