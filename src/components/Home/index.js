@@ -7,12 +7,22 @@ export default function Home() {
   return (
     <>
       <div className="bg-green-200 w-screen h-screen flex flex-col items-center lg:px-20">
-      <img className="w-32 h-32 my-20" src="https://img.icons8.com/dotty/80/null/womens-t-shirt.png" alt="tshort"/>
+        <img
+          className="w-32 h-32 my-20"
+          src="https://img.icons8.com/dotty/80/null/womens-t-shirt.png"
+          alt="tshort"
+        />
         <div className="border w-60 h-96 bg-white flex flex-col px-1">
           <div className="border border-dashed py-4">
-            <p className="text-center font-bold text-lg mt-3">ENVIRONMENTAL SAVINGS</p>
-            <p className="text-center text-sm">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
-            <p className="text-center text-xs font-bold">Calculation per 1kg material:</p>
+            <p className="text-center font-bold text-lg mt-3">
+              ENVIRONMENTAL SAVINGS
+            </p>
+            <p className="text-center text-sm">
+              OF RECYCLED CONTENT IN THE RAW MATERIALS
+            </p>
+            <p className="text-center text-xs font-bold">
+              Calculation per 1kg material:
+            </p>
           </div>
 
           <div className="flex flex-row py-6 justify-around items-center">
@@ -41,6 +51,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="my-10 mx-2 flex flex-col justify-center items-center">
+      <p className="text-4xl font-bold my-5 text-center">Our Goal</p>
+        <video controls src="videos/textile.mp4" width="820"></video>
+      </div>
+
       <div className="w-screen h-fit my-5 flex flex-col lg:flex-row lg:px-20 items-center justify-around">
         <img
           className="w-20 h-20 xl:w-36 xl:h-36 mt-10"
@@ -56,7 +72,7 @@ export default function Home() {
           </p>
           <p className="p-2">
             - About 5.8 million tonnes of textiles are discarded every year in
-            the EU, <br/> approximately 11kg per person
+            the EU, <br /> approximately 11kg per person
           </p>
           <Button
             variant="outlined"
@@ -146,7 +162,7 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="flex flex-col items-center my-4">
+      <div className="flex flex-col items-center my-4 mx-2">
         <p className="text-4xl font-bold my-4 text-center"> DIY Suggestions</p>
         <iframe
           className="w-full h-80 my-3 lg:w-1/2"
