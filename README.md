@@ -6,3 +6,5 @@
 - About 5.8 million tonnes of textiles are discarded every year in the EU, approximately 11kg per person 4, and every second somewhere in the world a truckload of textiles is landfilled or incinerated
 
 ## Fast Fashion is out of Fashion
+
+![sustainable-textile](./public/qr.png)
