@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="my-10 mx-2 flex flex-col justify-center items-center">
+      <div className="my-10 flex flex-col justify-center items-center">
       <p className="text-4xl font-bold my-5 text-center">Our Goal</p>
         <video controls src="videos/textile.mp4" width="820"></video>
       </div>
@@ -162,7 +162,7 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="flex flex-col items-center my-4 mx-2">
+      <div className="flex flex-col items-center my-4">
         <p className="text-4xl font-bold my-4 text-center"> DIY Suggestions</p>
         <iframe
           className="w-full h-80 my-3 lg:w-1/2"
