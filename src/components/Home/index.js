@@ -6,9 +6,9 @@ import Form from "../Form";
 export default function Home() {
   return (
     <>
-      <div className="bg-green-200 w-screen h-screen flex flex-col items-center justify-evenly lg:px-20">
-      <img className="w-32 h-32" src="https://img.icons8.com/dotty/80/null/womens-t-shirt.png" alt="tshort"/>
-        <div className="border w-60 h-96 bg-white flex flex-col px-1 -mt-32">
+      <div className="bg-green-200 w-screen h-screen flex flex-col items-center lg:px-20">
+      <img className="w-32 h-32 my-20" src="https://img.icons8.com/dotty/80/null/womens-t-shirt.png" alt="tshort"/>
+        <div className="border w-60 h-96 bg-white flex flex-col px-1">
           <div className="border border-dashed py-4">
             <p className="text-center font-bold text-lg mt-3">ENVIRONMENTAL SAVINGS</p>
             <p className="text-center text-sm">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
