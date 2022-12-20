@@ -6,16 +6,16 @@ import Form from "../Form";
 export default function Home() {
   return (
     <>
-      <div className="bg-green-200 py-5 w-screen h-fit mt-10 flex flex-col items-center justify-evenly lg:px-20">
-      <img className="w-28 h-28" src="https://img.icons8.com/dotty/80/null/jacket.png" alt="jacket"/>
-        <div className="border w-40 h-64 lg:w-60 lg:h-80 bg-white flex flex-col">
+      <div className="bg-green-200 w-screen h-screen flex flex-col items-center justify-evenly lg:px-20">
+      <img className="w-32 h-32" src="https://img.icons8.com/dotty/80/null/womens-t-shirt.png" alt="tshort"/>
+        <div className="border w-60 h-96 bg-white flex flex-col px-1 -mt-32">
           <div className="border border-dashed py-4">
-            <p className="text-center font-bold lg:text-lg">ENVIRONMENTAL SAVINGS</p>
-            <p className="text-center text-xs lg:text-sm">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
-            <p className="text-center text-xs font-bold">Calculation per 1kg</p>
+            <p className="text-center font-bold text-lg mt-3">ENVIRONMENTAL SAVINGS</p>
+            <p className="text-center text-sm">OF RECYCLED CONTENT IN THE RAW MATERIALS</p>
+            <p className="text-center text-xs font-bold">Calculation per 1kg material:</p>
           </div>
 
-          <div className="flex flex-row py-2 lg:py-4 justify-around items-center">
+          <div className="flex flex-row py-6 justify-around items-center">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/ios/50/null/wet.png"
@@ -23,7 +23,7 @@ export default function Home() {
             />
             <p>396 LITERS</p>
           </div>
-          <div className="flex flex-row py-1 lg:py-4 justify-around">
+          <div className="flex flex-row py-6 justify-around items-center">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/external-line-rakhmat-setiawan/64/null/external-carbondioxide-ecology-and-energy-line-line-rakhmat-setiawan.png"
@@ -31,7 +31,7 @@ export default function Home() {
             />
             <p>42 CO2</p>
           </div>
-          <div className="flex flex-row py-1 lg:py-4 justify-around">
+          <div className="flex flex-row py-6 justify-around items-center">
             <img
               className="w-7 h-7"
               src="https://img.icons8.com/ios/50/null/electricity.png"
@@ -56,7 +56,7 @@ export default function Home() {
           </p>
           <p className="p-2">
             - About 5.8 million tonnes of textiles are discarded every year in
-            the EU, approximately 11kg per person
+            the EU, <br/> approximately 11kg per person
           </p>
           <Button
             variant="outlined"
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
         <Button
           variant="outlined"
-          className="text-black border-black w-32 mb-5"
+          className="text-black border-black mb-5"
           onClick={() => window.gtag("event", "form_submit")}
         >
           See More
