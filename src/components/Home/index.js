@@ -63,7 +63,7 @@ export default function Home() {
           src={Cloth}
           alt="cloth"
         />
-        <p className="text-4xl my-2 font-bold text-center lg:ml-5">
+        <p className="text-4xl my-4 font-bold text-center lg:ml-5">
           Fast Fashion is out of Fashion
         </p>
         <div className="text-xl lg:text-2xl lg:px-5 text-center">
